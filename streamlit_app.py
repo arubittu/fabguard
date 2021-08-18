@@ -11,8 +11,8 @@ import matplotlib.pyplot as plt
 from rpa import *
 
 ##################### aws keys
-Access_Key_ID='AKIA4RDZJU3SBN7UTW3Y'
-Secret_Access_Key='SoQx5BuC69n9hAGabOuKTZoAi5dhPifTdklwcldA'
+Access_Key_ID='fill your keys'
+Secret_Access_Key='fill your keys'
 ####################
 
 # validation function
