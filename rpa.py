@@ -6,8 +6,8 @@ from pymongo import MongoClient
 import time
 #from boto3.s3.key import Key
 ################ aws access keys
-Access_Key_ID='AKIA4RDZJU3SBN7UTW3Y'
-Secret_Access_Key='SoQx5BuC69n9hAGabOuKTZoAi5dhPifTdklwcldA'
+Access_Key_ID='fill your keys'
+Secret_Access_Key='fill your keys'
 ################ 
 # uploading image on aws s3 after getting it from user
 def aws_call(Access_Key_ID,Secret_Access_Key,path,name='test_img.jpg'):
@@ -28,7 +28,7 @@ def aws_call(Access_Key_ID,Secret_Access_Key,path,name='test_img.jpg'):
 ###################################
     #getting mongodb details of the user
 def get_mongo():
-    client = MongoClient("mongodb+srv://testuser:testuser@test.zvbl0.mongodb.net/test?retryWrites=true&w=majority")
+    client = MongoClient("fill your keys")
     myDB = client['fabguard']
     mycollection = myDB.user
     item=myDB.user.find().sort('_id',-1).limit(1)
